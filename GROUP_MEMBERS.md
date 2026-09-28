@@ -1,0 +1,9 @@
+# GROUP MEMBERS
+
+## Registration Numbers
+
+1. SIT/B/01-06455/2024
+
+2. SIT/B/01-05771/2024
+
+3. SIT/B/01-02272/2024
