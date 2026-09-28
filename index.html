@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ask the user to enter username and password
+let username = prompt("Enter your username:");
+let password = prompt("Enter your password:");
+
+// Username validation:
+// - Starts with a capital letter
+// - Contains the word "student"
+let validUsername = /^[A-Z].*student.*$/.test(username);
+
+// Password validation:
+// - At least 8 characters
+// - Contains uppercase letter
+// - Contains lowercase letter
+// - Contains a digit
+// - Contains a special character
+let validPassword =
+    password.length >= 8 &&
+    /[A-Z]/.test(password) &&
+    /[a-z]/.test(password) &&
+    /[0-9]/.test(password) &&
+    /[^A-Za-z0-9]/.test(password);
+
+// Print validation results
+if (validUsername) {
+    console.log("Username is valid.");
+} else {
+    console.log("Username is invalid.");
+}
+
+if (validPassword) {
+    console.log("Password is valid.");
+} else {
+    console.log("Password is invalid.");
+}
+
+// Overall result
+if (validUsername && validPassword) {
+    console.log("Username and password are valid.");
+} else {
+    console.log("Username and/or password are invalid.");
+}
+    </script>
+</body>
+</html>
